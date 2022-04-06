@@ -29,7 +29,7 @@ const config: GatsbyConfig = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: path.resolve(`static/images`),
+        path: path.resolve(`src/images`),
       },
     },
     {
@@ -118,12 +118,12 @@ const config: GatsbyConfig = {
         background_color: `#ffffff`,
         theme_color: `rgba(0, 0, 0, 0)`,
         display: `standalone`,
-        icon: `static/images/icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-graphql-codegen`,
+      resolve: `gatsby-plugin-ts`,
       options: {
         documentPaths: [`./src/**/*.{ts,tsx}`]
       }

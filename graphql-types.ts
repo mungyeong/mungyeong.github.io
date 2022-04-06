@@ -3434,12 +3434,17 @@ export type Unnamed_1_Query = { site?: { siteMetadata?: { title?: string | null,
 export type Unnamed_2_QueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type Unnamed_2_Query = { site?: { siteMetadata?: { title?: string | null } | null } | null, allMarkdownRemark: { nodes: Array<{ excerpt?: string | null, fields?: { slug?: string | null } | null, frontmatter?: { date?: any | null, title?: string | null, description?: string | null } | null }> } };
+export type Unnamed_2_Query = { site?: { siteMetadata?: { title?: string | null } | null } | null };
 
 export type Unnamed_3_QueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type Unnamed_3_Query = { site?: { buildTime?: any | null } | null };
+export type Unnamed_3_Query = { site?: { siteMetadata?: { title?: string | null } | null } | null, allMarkdownRemark: { nodes: Array<{ excerpt?: string | null, fields?: { slug?: string | null } | null, frontmatter?: { date?: any | null, title?: string | null, description?: string | null } | null }> } };
+
+export type Unnamed_4_QueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type Unnamed_4_Query = { site?: { buildTime?: any | null } | null };
 
 export type BlogPostBySlugQueryVariables = Exact<{
   id: Scalars['String'];

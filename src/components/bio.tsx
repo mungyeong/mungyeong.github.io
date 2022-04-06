@@ -30,7 +30,7 @@ export default function Bio() {
                     className="bio-avatar"
                     layout="fixed"
                     formats={["AUTO", "WEBP", "AVIF"]}
-                    src="../../static/images/profile.gif"
+                    src="../images/profile.gif"
                     width={200}
                     height={200}
                     quality={100}
@@ -50,7 +50,7 @@ export default function Bio() {
                                 className="bio-avatar"
                                 layout="constrained"
                                 formats={["AUTO", "WEBP", "AVIF"]}
-                                src="../../static/images/facebook.png"
+                                src="../images/facebook.png"
                                 width={64}
                                 height={64}
                                 quality={100}
@@ -62,7 +62,7 @@ export default function Bio() {
                                 className="bio-avatar"
                                 layout="constrained"
                                 formats={["AUTO", "WEBP", "AVIF"]}
-                                src="../../static/images/github.png"
+                                src="../images/github.png"
                                 width={64}
                                 height={64}
                                 quality={100}
