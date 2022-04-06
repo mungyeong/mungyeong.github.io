@@ -1,2 +1,1 @@
-# 정문경 개인 블로그
-[Link](https://mungyeong.dev)
+# 정문경 개인 블로그 예정
