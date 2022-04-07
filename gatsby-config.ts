@@ -13,15 +13,25 @@ const config: GatsbyConfig = {
     social: {
       facebook: `gyeong5961`,
       github: `mungyeong`,
-    }
+    },
+    keywords: [
+      'Software Developer',
+      'Web Developer',
+      'Backend Developer',
+      'Korean',
+    ],
   },
 
   plugins: [
     `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: path.resolve(`content/blog`),
+        path: path.resolve(`content/blog/`),
         name: `blog`,
       },
     },
@@ -32,10 +42,21 @@ const config: GatsbyConfig = {
         path: path.resolve(`src/images`),
       },
     },
+    // {
+    //   resolve: "gatsby-plugin-page-creator",
+    //   options: {
+    //     path: path.resolve(`content/blog`),
+    //   },
+    // },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        plugins: [
+        extensions: [".mdx", ".md"],
+        // defaultLayouts: [{
+        //   default: path.resolve("/src/components/default/layout.tsx"),
+        //   blog: path.resolve("src/components/blog/layout.tsx")
+        // }],
+        gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -51,11 +72,10 @@ const config: GatsbyConfig = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          `gatsby-remark-emoji`,
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -73,17 +93,16 @@ const config: GatsbyConfig = {
         `,
         feeds: [
           {
-            serialize: ({query: {site, allMarkdownRemark}}) => {
-              return allMarkdownRemark.nodes.map(node => {
-                return Object.assign({}, node.frontmatter, {
-                  description: node.excerpt,
-                  date: node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + node?.fields?.slug,
-                  guid: site.siteMetadata.siteUrl + node?.fields?.slug,
-                  custom_elements: [{"content:encoded": node.html}],
-                })
-              })
-            },
+            serialize: ({query: {site, allMarkdownRemark}}) =>
+                    allMarkdownRemark.nodes.map(node => ({
+                      ...node.frontmatter,
+                      description: node.excerpt,
+                      date: node.frontmatter.date,
+                      url: site.siteMetadata.siteUrl + node.fields.slug,
+                      guid: site.siteMetadata.siteUrl + node.fields.slug,
+                      custom_elements: [{'content:encoded': node.html}],
+                    }))
+            ,
             query: `
               {
                 allMarkdownRemark(
@@ -113,22 +132,22 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Jeong MunGyeong Dev Blog`,
-        short_name: `Dev Blog`,
+        short_name: `Jeong MunGyeong`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `rgba(0, 0, 0, 0)`,
-        display: `standalone`,
+        display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-ts`,
+      resolve: `gatsby-plugin-graphql-codegen`,
       options: {
-        documentPaths: [`./src/**/*.{ts,tsx}`]
+        documentPaths: [`./src/graphql/schema/*.{ts,tsx}`]
       }
     }
   ],
 }
+
 
 export default config
