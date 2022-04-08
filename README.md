@@ -1,3 +1,5 @@
+<div align="center">
+
 # 정문경 개인 블로그
 [Link](https://mungyeong.dev)
 
@@ -7,4 +9,4 @@
 <img src="https://img.shields.io/badge/Gatsby-663399?style=flat-square&logo=Gatsby&logoColor=white"/>
 <img src="https://img.shields.io/badge/Markdown-000000?style=flat-square&logo=Markdown&logoColor=white"/>
 <img src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=GraphQL&logoColor=white"/>
- 
+</div>
