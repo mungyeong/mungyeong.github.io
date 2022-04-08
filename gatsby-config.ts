@@ -28,6 +28,7 @@ const config: GatsbyConfig = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -48,34 +49,33 @@ const config: GatsbyConfig = {
     //     path: path.resolve(`content/blog`),
     //   },
     // },
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        extensions: [".mdx", ".md"],
-        // defaultLayouts: [{
-        //   default: path.resolve("/src/components/default/layout.tsx"),
-        //   blog: path.resolve("src/components/blog/layout.tsx")
-        // }],
-        gatsbyRemarkPlugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 630,
-            },
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-          `gatsby-remark-prismjs`,
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
-          `gatsby-remark-emoji`,
-        ],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-mdx`,
+    //   options: {
+    //     extensions: [".mdx", ".md"],
+    //     // defaultLayouts: [{
+    //     //   default: path.resolve("/src/components/default/layout.tsx"),
+    //     //   blog: path.resolve("src/components/blog/layout.tsx")
+    //     // }],
+    //     gatsbyRemarkPlugins: [
+    //       {
+    //         resolve: `gatsby-remark-images`,
+    //         options: {
+    //           maxWidth: 630,
+    //         },
+    //       },
+    //       {
+    //         resolve: `gatsby-remark-responsive-iframe`,
+    //         options: {
+    //           wrapperStyle: `margin-bottom: 1.0725rem`,
+    //         },
+    //       },
+    //       `gatsby-remark-copy-linked-files`,
+    //       `gatsby-remark-smartypants`,
+    //       `gatsby-remark-emoji`,
+    //     ],
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -140,12 +140,6 @@ const config: GatsbyConfig = {
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-plugin-graphql-codegen`,
-      options: {
-        documentPaths: [`./src/graphql/schema/*.{ts,tsx}`]
-      }
-    }
   ],
 }
 
