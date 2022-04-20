@@ -3,7 +3,7 @@ import * as path from 'path';
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `정문경 Dev Blog`,
+    title: `JMG DEV BLOG`,
     siteUrl: `https://mungyeong.dev`,
     description: ``,
     author: {
@@ -11,8 +11,9 @@ const config: GatsbyConfig = {
       summary: `자바, 타입스크립트를 공부하고 있는 개발자`,
     },
     social: {
-      facebook: `gyeong5961`,
-      github: `mungyeong`,
+      facebook: `https://facebook.com/gyeong5961`,
+      github: `https://github.com/mungyeong`,
+      mail: `gyeong5961@gmail.com`,
     },
     keywords: [
       'Software Developer',
@@ -29,7 +30,6 @@ const config: GatsbyConfig = {
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`,
-    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -44,39 +44,29 @@ const config: GatsbyConfig = {
         path: path.resolve(`src/images`),
       },
     },
-    // {
-    //   resolve: "gatsby-plugin-page-creator",
-    //   options: {
-    //     path: path.resolve(`content/blog`),
-    //   },
-    // },
-    // {
-    //   resolve: `gatsby-plugin-mdx`,
-    //   options: {
-    //     extensions: [".mdx", ".md"],
-    //     // defaultLayouts: [{
-    //     //   default: path.resolve("/src/components/default/layout.tsx"),
-    //     //   blog: path.resolve("src/components/blog/layout.tsx")
-    //     // }],
-    //     gatsbyRemarkPlugins: [
-    //       {
-    //         resolve: `gatsby-remark-images`,
-    //         options: {
-    //           maxWidth: 630,
-    //         },
-    //       },
-    //       {
-    //         resolve: `gatsby-remark-responsive-iframe`,
-    //         options: {
-    //           wrapperStyle: `margin-bottom: 1.0725rem`,
-    //         },
-    //       },
-    //       `gatsby-remark-copy-linked-files`,
-    //       `gatsby-remark-smartypants`,
-    //       `gatsby-remark-emoji`,
-    //     ],
-    //   },
-    // },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 630,
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
+          'gatsby-remark-emoji',
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -136,9 +126,15 @@ const config: GatsbyConfig = {
         short_name: `Jeong MunGyeong`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `rgba(0, 0, 0, 0)`,
-        display: `minimal-ui`,
+        theme_color: `#0096C6`,
+        display: `standalone`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        additionalData: `@import "./src/styles/variables.scss"; @import "./src/styles/mixins.scss";`,
       },
     },
   ],

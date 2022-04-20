@@ -5,3 +5,7 @@ declare const process: {
     NODE_ENV: string
   }
 };
+declare module '*.svg' {
+  const svgfile: string;
+  export default svgfile;
+}

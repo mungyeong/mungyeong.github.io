@@ -1,3 +1,3 @@
 import '@fontsource/merriweather/latin.css';
 import '@fontsource/montserrat/latin.css';
-import 'normalize.css';
+import './src/normalize.css';
