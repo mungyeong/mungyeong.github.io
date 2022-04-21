@@ -3,18 +3,18 @@ import '../../styles/components/header.scss';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import { globalHistory } from '@reach/router';
 import { BUTTON_COLOR } from '../../constants/buttonType';
-import GitHub from '../../images/about/git.svg';
+import GitHub from '../../images/profile/github.svg';
 import Button from './Button';
 import Toggler from './Toggler';
 
 interface HeaderProps {
-  headerTitle: JSX.Element;
+  headerTitle?: JSX.Element;
 }
 
 function Header({ headerTitle }: HeaderProps) {
   const { pathname } = globalHistory.location;
   const data = useStaticQuery(graphql`
-    query gitUrlQuery {
+    query GithubUrlQuery {
       site {
         siteMetadata {
           social {
@@ -36,8 +36,8 @@ function Header({ headerTitle }: HeaderProps) {
           <Link to="/">
             <h3 className={pathname === '/' ? 'active' : ''}>POSTS</h3>
           </Link>
-          <Link to="/about">
-            <h3 className={pathname === '/about' ? 'active' : ''}>ABOUT</h3>
+          <Link to="/profile">
+            <h3 className={pathname === '/profile' ? 'active' : ''}>PROFILE</h3>
           </Link>
           <Button
             text="GITHUB"

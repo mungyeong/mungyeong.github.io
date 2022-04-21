@@ -3,12 +3,12 @@ import '../styles/pages/about.scss';
 import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Contacts from '../components/common/Contacts';
-import profile from '../images/about/profile.svg';
+import profile from '../images/profile/profile.svg';
 import { COLOR } from '../constants/togglerType';
 
-const About = ({ location }) => {
+const Profile = ({ location }) => {
   const data = useStaticQuery(graphql`
-    query AboutQuery {
+    query ProfileQuery {
       site {
         siteMetadata {
           author {
@@ -31,8 +31,8 @@ const About = ({ location }) => {
 
   return (
     <Layout location={location}>
-      <div className="about-page">
-        <h2 className={theme('about-name')}>{author.name}</h2>
+      <div className="profile-page">
+        <h2 className={theme('profile-name')}>{author.name}</h2>
         <p className={theme('self-introduction')} dangerouslySetInnerHTML={{ __html: instruction }} />
         <img className="profile-image" src={profile} alt="profile" />
         <Contacts />
@@ -41,4 +41,4 @@ const About = ({ location }) => {
   );
 };
 
-export default About;
+export default Profile;

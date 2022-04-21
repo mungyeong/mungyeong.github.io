@@ -1,17 +1,17 @@
 import React from 'react';
-import { Link } from '@reach/router';
+import { Link } from 'gatsby';
 import '../../styles/components/category.scss';
 
 interface ICategory {
-  categories: string[];
-  category: string;
+  categories?: string[];
+  category?: string;
   setCategory: (id: string) => void;
 }
 
 export default function Category({ categories, category, setCategory }: ICategory) {
   return (
     <div className="category">
-      {categories.map((categotyItem) => (
+      {categories?.map((categotyItem) => (
         <Link
           key={`badge-${categotyItem}`}
           to={`/?category=${categotyItem}`}

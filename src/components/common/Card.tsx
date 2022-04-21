@@ -9,32 +9,32 @@ interface Field {
   slug: string;
 }
 interface Frontmatter {
-  title: string;
-  description: string;
-  date: string;
-  category: string;
+  title?: string;
+  description?: string;
+  date?: string;
+  category?: string;
 }
 
 interface Post {
-  excerpt: string;
-  frontmatter: Frontmatter;
-  fields: Field;
+  excerpt?: string;
+  frontmatter?: Frontmatter;
+  fields?: Field;
 }
 
 interface Props {
-  post: Post;
-  thumbnail: string | null;
+  post?: Post;
+  thumbnail?: string ;
 }
 
 export default function Card({ post, thumbnail }: Props) {
-  const title = post.frontmatter.title || post.fields.slug;
-  const { category, description } = post.frontmatter;
+  const title = post?.frontmatter?.title || post?.fields?.slug;
+  const { category, description } = post?.frontmatter;
 
   const themeSize = 3;
   const themeStartNumber = 1;
 
   return (
-    <Link to={post.fields.slug}>
+    <Link to={post?.fields?.slug}>
       <div className="card">
         {thumbnail ? (
           <div className="card--image" dangerouslySetInnerHTML={{ __html: thumbnail }} />
@@ -50,7 +50,7 @@ export default function Card({ post, thumbnail }: Props) {
         <div className="card--desc">
           <div className="card--desc__top">
             <h2 className="title">{title}</h2>
-            <p className="contents">{description || post.excerpt}</p>
+            <p className="contents">{description || post?.excerpt}</p>
           </div>
           <div className="card--desc__bottom">
             <p className="card-category">
@@ -59,7 +59,7 @@ export default function Card({ post, thumbnail }: Props) {
             </p>
             <p className="card-date">
               <img src={cardDateIcon} alt="date icon" className="card-date-icon" />
-              <span className="card-date-text">{post.frontmatter.date}</span>
+              <span className="card-date-text">{post?.frontmatter?.date}</span>
             </p>
           </div>
         </div>

@@ -29,14 +29,20 @@ const config: GatsbyConfig = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: path.resolve(`content/blog/`),
-        name: `blog`,
+        path: path.resolve(`content/post/`),
+        name: `post`,
       },
     },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     path: path.resolve(`content/profile`),
+    //     name: `profile`,
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -128,13 +134,38 @@ const config: GatsbyConfig = {
         background_color: `#ffffff`,
         theme_color: `#0096C6`,
         display: `standalone`,
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.svg`, // This path is relative to the root of the site.
       },
     },
     {
       resolve: `gatsby-plugin-sass`,
       options: {
         additionalData: `@import "./src/styles/variables.scss"; @import "./src/styles/mixins.scss";`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-offline",
+      options: {
+        workboxConfig: {
+          runtimeCaching: [
+            {
+              urlPattern: /(\.js$|\.css$|[^:]static\/)/,
+              handler: "CacheFirst",
+            },
+            {
+              urlPattern: /^https?:.*\/page-data\/.*\.json/,
+              handler: "StaleWhileRevalidate",
+            },
+            {
+              urlPattern: /^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/,
+              handler: "StaleWhileRevalidate",
+            },
+            {
+              urlPattern: /^https?:\/\/fonts\.googleapis\.com\/css/,
+              handler: "StaleWhileRevalidate",
+            },
+          ],
+        },
       },
     },
   ],

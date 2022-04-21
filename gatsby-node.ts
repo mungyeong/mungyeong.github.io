@@ -5,7 +5,7 @@ import {createFilePath} from 'gatsby-source-filesystem';
 export async function createPages({ graphql, actions, reporter }) {
   const { createPage } = actions;
 
-  const blogPost = path.resolve(`./src/templates/blog-post.tsx`);
+  const blogPost = path.resolve(`src/templates/blog-post.tsx`);
 
   const result = await graphql(
     `
@@ -91,6 +91,7 @@ export async function createSchemaCustomization({ actions }) {
       title: String
       description: String
       date: Date @dateformat
+      category: String
     }
 
     type Fields {

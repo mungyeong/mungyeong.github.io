@@ -1,8 +1,8 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import git from '../../images/about/git.svg';
-import facebook from '../../images/about/facebook.svg';
-import circle from '../../images/about/circle.svg';
+import github from '../../images/profile/github.svg';
+import facebook from '../../images/profile/facebook.svg';
+import circle from '../../images/profile/circle.svg';
 
 import '../../styles/components/contacts.scss';
 
@@ -36,7 +36,7 @@ const Contacts = () => {
         <span>{social.mail}</span>
       </div>
       <div className="snslink">
-        <SNSLinkItem url={'git'} img={git} />
+        <SNSLinkItem url={'github'} img={github} />
         <SNSLinkItem url={'facebook'} img={facebook} />
       </div>
     </div>
