@@ -1,0 +1,63 @@
+{
+  "title": "Jeong MunGyeong Blog",
+  "url": "https://mungyeong.dev",
+  "subtitle": "Jeong MunGyeong Dev Blog",
+  "copyright": "© All rights reserved.",
+  "disqusShortname": "",
+  "postsLimit": 4,
+  "pathPrefix": "/",
+  "menu": [
+    {
+      "label": "Articles",
+      "path": "/"
+    },
+    {
+      "label": "About me",
+      "path": "/pages/about"
+    },
+    {
+      "label": "Contact me",
+      "path": "/pages/contacts"
+    }
+  ],
+  "author": {
+    "name": "Jeong MunGyeong",
+    "photo": "/profile.png",
+    "bio": "test",
+    "contacts": {
+      "rss": "",
+      "email": "gyeong5961@gmail.com",
+      "github": "mungyeong",
+      "facebook": "gyeong5961",
+      "telegram": "",
+      "twitter": "",
+      "linkedin": "",
+      "instagram": "",
+      "line": "",
+      "weibo": "",
+      "gitlab": "",
+      "medium": "",
+      "youtube": "",
+      "codepen": "",
+      "soundcloud": ""
+    }
+  },
+  "experience": {
+    "work": [
+      {
+        "company": "",
+        "department": "",
+        "time": "",
+        "desc": ""
+      }
+    ],
+    "project": [
+      {
+        "name": "",
+        "role": "",
+        "time": "",
+        "desc": ""
+      }
+    ]
+  }
+}
