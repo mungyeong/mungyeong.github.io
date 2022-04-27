@@ -21,9 +21,9 @@
     }
   ],
   "author": {
-    "name": "Jeong MunGyeong",
+    "name": "정문경",
     "photo": "/profile.png",
-    "bio": "test",
+    "bio": "자바와 타입스크립트를 공부하는 개발자",
     "contacts": {
       "rss": "",
       "email": "gyeong5961@gmail.com",
@@ -41,23 +41,5 @@
       "codepen": "",
       "soundcloud": ""
     }
-  },
-  "experience": {
-    "work": [
-      {
-        "company": "",
-        "department": "",
-        "time": "",
-        "desc": ""
-      }
-    ],
-    "project": [
-      {
-        "name": "",
-        "role": "",
-        "time": "",
-        "desc": ""
-      }
-    ]
   }
 }

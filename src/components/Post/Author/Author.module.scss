@@ -7,13 +7,19 @@
   @include padding-top(1);
   @include line-height(1);
   @include margin-top(1);
-  @include margin-bottom(2);
+  @include margin-bottom(0);
 
   .bio {
-    .twitter {
-      display: block;
-      text-decoration: underline;
-    }
+    display: inline-block;
+  }
+
+  .photo {
+      background-clip: padding-box;
+      border-radius: 50%;
+      display: inline-block;
+      height: 75px;
+      width: 75px;
+      @include margin-bottom(0);
   }
 }
 

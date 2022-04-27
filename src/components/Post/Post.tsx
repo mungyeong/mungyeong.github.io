@@ -32,9 +32,9 @@ const Post: React.FC<Props> = ({ post }: Props) => {
       </div>
 
       <div className={styles.footer}>
+        <Author />
         <Meta date={date} />
         {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
-        <Author />
       </div>
 
       <div className={styles.comments}>
