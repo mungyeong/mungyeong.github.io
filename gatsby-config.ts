@@ -38,8 +38,8 @@ export default {
         feeds: [
           {
             serialize: ({
-                          query: { site, allMarkdownRemark },
-                        }: {
+                query: { site, allMarkdownRemark },
+              }: {
               query: {
                 site: {
                   siteMetadata: {
@@ -51,14 +51,14 @@ export default {
                 };
               };
             }) =>
-                    allMarkdownRemark.edges.map(({ node }) => ({
-                      ...node.frontmatter,
-                      date: node?.frontmatter?.date,
-                      description: node?.frontmatter?.description,
-                      url: site.siteMetadata.url + node?.fields?.slug,
-                      guid: site.siteMetadata.url + node?.fields?.slug,
-                      custom_elements: [{ "content:encoded": node.html }],
-                    })),
+              allMarkdownRemark.edges.map(({ node }) => ({
+                ...node.frontmatter,
+                date: node?.frontmatter?.date,
+                description: node?.frontmatter?.description,
+                url: site.siteMetadata.url + node?.fields?.slug,
+                guid: site.siteMetadata.url + node?.fields?.slug,
+                custom_elements: [{ "content:encoded": node.html }],
+              })),
             query: `
               {
                 allMarkdownRemark(
@@ -160,7 +160,7 @@ export default {
         short_name: config.title,
         theme_color: "hsl(31, 92%, 62%)",
         background_color: "hsl(0, 0%, 100%)",
-        icon: "content/icon.svg",
+        icon: "content/images/icon.svg",
         display: "standalone",
         start_url: "/",
       },

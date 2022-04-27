@@ -7,7 +7,6 @@ const useResume= () => {
         dataJson {
           tool {
             name
-            color
           }
           experience {
             project {
@@ -26,33 +25,26 @@ const useResume= () => {
             language {
               name
               level
-              color
             }
             frontend {
               name
-              color
             }
             etc {
               build {
                 name
-                color
               }
               db {
                 name
-                color
               }
               server {
                 name
-                color
               }
               vcs {
                 name
-                color
               }
             }
             backend {
               name
-              color
             }
           }
         }

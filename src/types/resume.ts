@@ -1,11 +1,11 @@
-import Skill from './skill';
-import Experience from './experience';
 import Item from './item';
+import Project from './project';
+import Work from './work';
 
-interface DataJson {
-  skill: Skill,
-  experience: Experience,
+interface Resume {
+  skill: Map<string, Array<Item>|Map<string, Item>>,
+  experience: Map<string, Array<Project> | Array<Work>>
   tool: Array<Item>,
 }
 
-export default DataJson;
+export default Resume;

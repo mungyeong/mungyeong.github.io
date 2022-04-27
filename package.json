@@ -6,9 +6,9 @@
   "author": "Jeong MunGyeong",
   "scripts": {
     "start": "gatsby develop",
-    "develop": "yarn clean && gatsby develop",
+    "develop": "gatsby clean && gatsby develop",
     "serve": "gatsby serve",
-    "build": "gatsby build",
+    "build": "gatsby clean && gatsby build",
     "deploy": "gatsby build && gh-pages -d public -b gh-pages",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit"

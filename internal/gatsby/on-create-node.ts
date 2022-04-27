@@ -25,7 +25,7 @@ const onCreateNode: GatsbyNode["onCreateNode"] = ({
 
       createNodeField({ node, name: "slug", value });
     } else {
-      const value = createFilePath({ node, getNode });
+      const value = createFilePath({ node, getNode }).replace("/pages/","/");
       createNodeField({ node, name: "slug", value });
     }
 

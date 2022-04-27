@@ -66,152 +66,117 @@
   "skill": {
     "language": [
       {
-        "name": "Java",
-        "level": "3",
-        "color": "007396"
+        "name": "java",
+        "level": "3"
       },
       {
-        "name": "JavaScript",
-        "level": "3",
-        "color": "F7DF1E"
+        "name": "javascript",
+        "level": "3"
       },
       {
-        "name": "TypeScript",
-        "level": "3",
-        "color": "3178C6"
+        "name": "typescript",
+        "level": "3"
       }
     ],
     "backend": [
       {
-        "name": "Spring",
-        "color": "6DB33F"
+        "name": "spring"
       },
       {
-        "name": "Spring%20Boot",
-        "color": "6DB33F"
+        "name": "springboot"
       },
       {
-        "name": "Node.js",
-        "color": "339933"
+        "name": "nodejs"
       },
       {
-        "name": "Express",
-        "color": "000000"
+        "name": "express"
       },
       {
-        "name": "NestJS",
-        "color": "E0234E"
+        "name": "nestjs"
       }
     ],
     "frontend": [
       {
-        "name": "React",
-        "color": "61DAFB"
+        "name": "react"
       },
       {
-        "name": "Gatsby",
-        "color": "663399"
+        "name": "Gatsby"
       },
       {
-        "name": "Vue.js",
-        "color": "4FC08D"
+        "name": "Vue.js"
       },
       {
-        "name": "Vuetify",
-        "color": "1867C0"
+        "name": "Vuetify"
       }
     ],
     "etc": {
       "vcs": [
         {
-          "name": "Git",
-          "color": "F05032"
+          "name": "Git"
         },
         {
-          "name": "GitLab",
-          "color": "FCA121"
+          "name": "GitLab"
         },
         {
-          "name": "GitHub",
-          "color": "181717"
+          "name": "GitHub"
         }
       ],
       "build": [
         {
-          "name": "Apache%20Maven",
-          "color": "C71A36"
+          "name": "Apache%20Maven"
         },
         {
-          "name": "Gradle",
-          "color": "02303A"
+          "name": "Gradle"
         },
         {
-          "name": "npm",
-          "color": "CB3837"
+          "name": "npm"
         },
         {
-          "name": "Yarn",
-          "color": "2C8EBB"
+          "name": "Yarn"
         },
         {
-          "name": "Jenkins",
-          "color": "D24939"
+          "name": "Jenkins"
         }
       ],
       "server": [
         {
-          "name": "Amazon%20AWS",
-          "color": "232F3E"
+          "name": "AWS"
         },
         {
-          "name": "Docker",
-          "color": "2496ED"
+          "name": "docker"
         },
         {
-          "name": "Kubernetes",
-          "color": "326CE5"
+          "name": "kubernetes"
         }
       ],
       "db": [
         {
-          "name": "MySQL",
-          "color": "4479A1"
+          "name": "mysql"
         },
         {
-          "name": "MariaDB",
-          "color": "003545"
+          "name": "mariadb"
         },
         {
-          "name": "MongoDB",
-          "color": "47A248"
+          "name": "mongodb"
         },
         {
-          "name": "Redis",
-          "color": "DC382D"
+          "name": "redis"
         },
         {
-          "name": "RabbitMQ",
-          "color": "FF6600"
+          "name": "rabbitmq"
         }
       ]
     }
   },
   "tool": [
     {
-      "name": "IntelliJ%20IDEA",
-      "color": "000000"
+      "name": "IntelliJ%20IDEA"
     },
     {
-      "name": "WebStorm",
-      "color": "000000"
+      "name": "webstorm"
     },
     {
-      "name": "DataGrip",
-      "color": "000000"
-    },
-    {
-      "name": "CLion",
-      "color": "000000"
+      "name": "datagrip"
     }
   ]
 }

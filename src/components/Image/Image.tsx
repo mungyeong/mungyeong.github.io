@@ -16,7 +16,7 @@ interface Data {
   images: {
     edges: Array<{
       node: FileSystemNode & {
-        childImageSharp: {
+        childImageSharp?: {
           gatsbyImageData: IGatsbyImageData;
         };
       };
@@ -29,7 +29,7 @@ const Image: FC<Props> = ({ path, ...rest }: Props) => (
     query={graphql`
       query {
         images: allFile(
-          filter: { ext: { regex: "/png|jpg|jpeg|webp|tif|tiff/" } }
+          filter: { ext: { regex: "/png|jpg|jpeg|webp|tif|tiff|svg/" } }
         ) {
           edges {
             node {
@@ -46,9 +46,13 @@ const Image: FC<Props> = ({ path, ...rest }: Props) => (
       const { images: { edges = [] } = {} } = data;
       const image = edges.find(({ node }) => node.absolutePath.includes(path));
 
-      if (!image) {
+      if (!image|| !image.node.childImageSharp) {
         return null;
       }
+      if (image.node.extension.search("svg")) {
+        return <img src={path} alt={"path-logo"} />
+      }
+
 
       const {
         node: { childImageSharp },

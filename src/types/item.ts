@@ -1,6 +1,5 @@
 interface Item {
   name?: string,
-  color?: string,
   level?: string,
 }
 
