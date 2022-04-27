@@ -18,11 +18,11 @@ const Feed: React.FC<Props> = ({ edges }: Props) => (
           <time
             className={styles.time}
             dateTime={new Date(edge.node.frontmatter.date).toLocaleDateString(
-              "en-US",
+              "ko",
               { year: "numeric", month: "long", day: "numeric" },
             )}
           >
-            {new Date(edge.node.frontmatter.date).toLocaleDateString("en-US", {
+            {new Date(edge.node.frontmatter.date).toLocaleDateString("ko", {
               year: "numeric",
               month: "long",
             })}

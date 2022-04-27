@@ -10,7 +10,7 @@ const Meta: React.FC<Props> = ({ date }: Props) => (
   <div className={styles.meta}>
     <p className={styles.date}>
       Published{" "}
-      {new Date(date).toLocaleDateString("en-US", {
+      {new Date(date).toLocaleDateString("ko", {
         year: "numeric",
         month: "short",
         day: "numeric",

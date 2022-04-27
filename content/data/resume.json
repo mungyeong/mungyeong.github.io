@@ -1,0 +1,217 @@
+{
+  "experience": {
+    "work": [
+      {
+        "company": "(주)제론소프트엔 (Zeronsoftn)",
+        "department": "시스템 솔루션 개발부",
+        "time": "202108 ~ "
+      },
+      {
+        "company": "(주)아사달 (Asadal)",
+        "department": "웹사업부 호스팅팀",
+        "time": "2018-12 ~ 2021-02"
+      }
+    ],
+    "project": [
+      {
+        "name": "Zeroset 자산관리 개발",
+        "role": "백엔드 개발",
+        "time": "2022.04 ~ ",
+        "desc": ""
+      },
+      {
+        "name": "ZeroMon 다운로드 서비스 개선",
+        "role": "백엔드 개발자",
+        "time": "2022.03 - 2022.04",
+        "desc": "nest.js, typescript 리팩토링"
+      },
+      {
+        "name": "ZeroBack S.M.A.R.T 분석 서비스 개발",
+        "role": "백엔드 개발자",
+        "time": "2021.12 - 2022.03",
+        "desc": "HDD, SSD S.M.A.R.T 정보 수집 및 분석 하여 현재 저장 장치의 상태를 확인하는 서비스"
+      },
+      {
+        "name": "ZeroMon linux 패키지 취약점 서비스 개발",
+        "role": "백엔드 개발자",
+        "time": "2021.01 - 2020.12",
+        "desc": "CVE 정보 수집 및 Ubuntu security CVE 정보 수집, Debian security CVE 정보 수집, 패키지 취약점 분석"
+      },
+      {
+        "name": "경기도일자리재단 청년노동자통장 시스템 운영 용역",
+        "time": "2020.01 - 2020.12"
+      },
+      {
+        "name": "RFID기반 서울역사유물관리시스템 유지관리 용역",
+        "time": "2020.01 - 2020.12"
+      },
+      {
+        "name": "2020년 대·중소기업·농어업협력재단 정보시스템 유지보수 용역",
+        "time": "2020.01 - 2020.12"
+      },
+      {
+        "name": "서울시자원봉사센터 홈페이지 유지관리 및 기능개선",
+        "time": "2020.01 - 2020.12"
+      },
+      {
+        "name": "중소벤처기업진흥공단 자산거래중개장터 홈페이지 유지보수",
+        "time": "2019.01 - 2019.12"
+      },
+      {
+        "name": "대·중소기업·농어업협력재단 정보시스템 유지보수",
+        "time": "2018.12- 2019.12"
+      }
+    ]
+  },
+  "skill": {
+    "language": [
+      {
+        "name": "Java",
+        "level": "3",
+        "color": "007396"
+      },
+      {
+        "name": "JavaScript",
+        "level": "3",
+        "color": "F7DF1E"
+      },
+      {
+        "name": "TypeScript",
+        "level": "3",
+        "color": "3178C6"
+      }
+    ],
+    "backend": [
+      {
+        "name": "Spring",
+        "color": "6DB33F"
+      },
+      {
+        "name": "Spring%20Boot",
+        "color": "6DB33F"
+      },
+      {
+        "name": "Node.js",
+        "color": "339933"
+      },
+      {
+        "name": "Express",
+        "color": "000000"
+      },
+      {
+        "name": "NestJS",
+        "color": "E0234E"
+      }
+    ],
+    "frontend": [
+      {
+        "name": "React",
+        "color": "61DAFB"
+      },
+      {
+        "name": "Gatsby",
+        "color": "663399"
+      },
+      {
+        "name": "Vue.js",
+        "color": "4FC08D"
+      },
+      {
+        "name": "Vuetify",
+        "color": "1867C0"
+      }
+    ],
+    "etc": {
+      "vcs": [
+        {
+          "name": "Git",
+          "color": "F05032"
+        },
+        {
+          "name": "GitLab",
+          "color": "FCA121"
+        },
+        {
+          "name": "GitHub",
+          "color": "181717"
+        }
+      ],
+      "build": [
+        {
+          "name": "Apache%20Maven",
+          "color": "C71A36"
+        },
+        {
+          "name": "Gradle",
+          "color": "02303A"
+        },
+        {
+          "name": "npm",
+          "color": "CB3837"
+        },
+        {
+          "name": "Yarn",
+          "color": "2C8EBB"
+        },
+        {
+          "name": "Jenkins",
+          "color": "D24939"
+        }
+      ],
+      "server": [
+        {
+          "name": "Amazon%20AWS",
+          "color": "232F3E"
+        },
+        {
+          "name": "Docker",
+          "color": "2496ED"
+        },
+        {
+          "name": "Kubernetes",
+          "color": "326CE5"
+        }
+      ],
+      "db": [
+        {
+          "name": "MySQL",
+          "color": "4479A1"
+        },
+        {
+          "name": "MariaDB",
+          "color": "003545"
+        },
+        {
+          "name": "MongoDB",
+          "color": "47A248"
+        },
+        {
+          "name": "Redis",
+          "color": "DC382D"
+        },
+        {
+          "name": "RabbitMQ",
+          "color": "FF6600"
+        }
+      ]
+    }
+  },
+  "tool": [
+    {
+      "name": "IntelliJ%20IDEA",
+      "color": "000000"
+    },
+    {
+      "name": "WebStorm",
+      "color": "000000"
+    },
+    {
+      "name": "DataGrip",
+      "color": "000000"
+    },
+    {
+      "name": "CLion",
+      "color": "000000"
+    }
+  ]
+}
