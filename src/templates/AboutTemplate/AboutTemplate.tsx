@@ -1,22 +1,21 @@
 import React from "react";
 
 import {Layout} from "@/components/Layout";
-import {Page} from "@/components/Page";
+import {About} from "@/components/About";
 import {Sidebar} from "@/components/Sidebar";
-import {/*useResume,*/ useSiteMetadata} from "@/hooks";
-// import {Resume} from "@/types";
+import {useResume, useSiteMetadata} from "@/hooks";
+import {Resume} from "@/types";
 
-const AboutTemplate: React.FC = () => {
+const AboutTemplate = () => {
+  const finaltitle = "About me";
   const {title, subtitle} = useSiteMetadata();
-  // const resume: Resume = useResume();
+  const resume: Resume = useResume();
 
 
   return (
-    <Layout title={`About me - ${title}`} description={subtitle}>
+    <Layout title={`${finaltitle} - ${title}`} description={subtitle}>
       <Sidebar/>
-      <Page title="About me">
-
-      </Page>
+      <About title={`${finaltitle}`} resume={resume} />
     </Layout>
   );
 };

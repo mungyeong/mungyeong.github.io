@@ -8,10 +8,8 @@
     "start": "gatsby develop",
     "develop": "gatsby clean && gatsby develop",
     "serve": "gatsby serve",
-    "build": "gatsby clean && gatsby build",
-    "deploy": "gatsby build && gh-pages -d public -b gh-pages",
-    "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "build": "gatsby build",
+    "clean": "gatsby clean"
   },
   "dependencies": {
     "@sentry/gatsby": "^6.19.6",

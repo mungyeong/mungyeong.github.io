@@ -29,7 +29,7 @@ const Image: FC<Props> = ({ path, ...rest }: Props) => (
     query={graphql`
       query {
         images: allFile(
-          filter: { ext: { regex: "/png|jpg|jpeg|webp|tif|tiff|svg/" } }
+          filter: { ext: { regex: "/png|jpg|jpeg|webp|tif|tiff/" } }
         ) {
           edges {
             node {
@@ -46,13 +46,9 @@ const Image: FC<Props> = ({ path, ...rest }: Props) => (
       const { images: { edges = [] } = {} } = data;
       const image = edges.find(({ node }) => node.absolutePath.includes(path));
 
-      if (!image|| !image.node.childImageSharp) {
+      if (!image) {
         return null;
       }
-      if (image.node.extension.search("svg")) {
-        return <img src={path} alt={"path-logo"} />
-      }
-
 
       const {
         node: { childImageSharp },

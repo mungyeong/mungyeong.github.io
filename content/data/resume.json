@@ -71,11 +71,11 @@
       },
       {
         "name": "javascript",
-        "level": "3"
+        "level": "2"
       },
       {
         "name": "typescript",
-        "level": "3"
+        "level": "2"
       }
     ],
     "backend": [
@@ -100,47 +100,47 @@
         "name": "react"
       },
       {
-        "name": "Gatsby"
+        "name": "gatsby"
       },
       {
-        "name": "Vue.js"
+        "name": "vuejs"
       },
       {
-        "name": "Vuetify"
+        "name": "vuetify"
       }
     ],
     "etc": {
       "vcs": [
         {
-          "name": "Git"
+          "name": "git"
         },
         {
-          "name": "GitLab"
+          "name": "gitLab"
         },
         {
-          "name": "GitHub"
+          "name": "gitHub"
         }
       ],
       "build": [
         {
-          "name": "Apache%20Maven"
+          "name": "maven"
         },
         {
-          "name": "Gradle"
+          "name": "gradle"
         },
         {
           "name": "npm"
         },
         {
-          "name": "Yarn"
+          "name": "yarn"
         },
         {
-          "name": "Jenkins"
+          "name": "jenkins"
         }
       ],
       "server": [
         {
-          "name": "AWS"
+          "name": "aws"
         },
         {
           "name": "docker"
@@ -170,13 +170,31 @@
   },
   "tool": [
     {
-      "name": "IntelliJ%20IDEA"
+      "name": "intellijidea"
     },
     {
       "name": "webstorm"
     },
     {
       "name": "datagrip"
+    }
+  ],
+  "certificate": [
+    {
+      "name": "정보처리산업기사",
+      "date": "2019.05.22"
+    },
+    {
+      "name": "네트워크관리사2급",
+      "date": "2018.07.03"
+    },
+    {
+      "name": "리눅스마스터2급",
+      "date": "2018.06.22"
+    },
+    {
+      "name": "정보처리기능사",
+      "date": "2016.02.03"
     }
   ]
 }

@@ -1,5 +1,5 @@
 const routes = Object.freeze({
-  aboutRoute: "/about",
+  aboutRoute: "/abouts",
   categoriesListRoute: "/categories",
   categoryRoute: "/category",
   tagsListRoute: "/tags",

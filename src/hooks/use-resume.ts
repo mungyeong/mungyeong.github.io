@@ -47,6 +47,10 @@ const useResume= () => {
               name
             }
           }
+          certificate {
+            name
+            date
+          }
         }
       }
     `,

@@ -4,7 +4,7 @@
 .about {
     @include margin-bottom(2);
 
-    .inner {
+    .resume {
         @include padding(1, 0.75, 0);
     }
 
@@ -20,28 +20,46 @@
         font-size: $typographic-base-font-size;
         @include line-height(1);
         @include margin(0, 0, 1);
+
     }
 
     img {
         display: inline;
     }
+
+    svg {
+        margin-right: 5px
+    }
+
+    h3 {
+        background-color: darkgray;
+        @include line-height(1);
+        @include margin-top(1.5);
+        @include margin-bottom(0.5);
+    }
+
+    h4 {
+        @include line-height(1);
+        @include margin-top(1.2);
+        @include margin-bottom(0.5);
+    }
 }
 
 @include breakpoint-sm {
-    .page {
+    .about {
         lost-column: 7/12;
 
-        .inner {
+        .resume {
             @include padding(1.25, 0.75, 0);
         }
     }
 }
 
 @include breakpoint-md {
-    .page {
+    .about {
         lost-column: 2/3;
 
-        .inner {
+        .resume {
             @include padding(1.5, 1, 0);
         }
     }
