@@ -1,0 +1,11 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+.skill {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}

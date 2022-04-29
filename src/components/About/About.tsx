@@ -6,6 +6,7 @@ import {SVG}  from "@/constants"
 
 
 import * as styles from "./About.module.scss";
+import {Skill} from '@/components/About/Skill';
 
 interface Props {
   title: string;
@@ -13,10 +14,9 @@ interface Props {
   children: React.ReactNode;
 }
 
-const About: ({title, resume, children}: Props) => JSX.Element =({title, resume, children}: Props) => {
+const About: ({title, resume, children}: Props) => JSX.Element = ({title, resume, children}: Props) => {
   const pageRef = useRef<Nullable<HTMLDivElement>>(null);
-  const { language ,backend, frontend, etc} = resume?.skill;
-  const { project, work} = resume?.experience;
+  const skill = resume?.skill;
 
   useEffect(() => {
     if (pageRef.current) {
@@ -24,27 +24,12 @@ const About: ({title, resume, children}: Props) => JSX.Element =({title, resume,
     }
   }, []);
 
-  console.log(backend);
   return (
     <div ref={pageRef} className={styles.about}>
       <div className={styles.resume}>
         {title && <h1 className={styles.title}>{title}</h1>}
         <div className={styles.body}>
-          <div>
-            <h3>{"Skill"}</h3>
-            <div>
-              {backend && <h4>{"BackEnd"}</h4>}
-              {backend &&  backend.map((item) =>
-                      SVG[item.name]())
-              }
-            </div>
-            <div>
-              {frontend && <h4>{"FrontEnd"}</h4>}
-              {frontend &&  frontend.map((item) =>
-                              SVG[item.name]())
-              }
-            </div>
-          </div>
+          {skill && <Skill skill={skill} />}
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import Work from './work';
 import Certificate from './certificate';
 
 interface Resume {
-  skill: Record<SkillName, Item[]|Record<string ,Item[]>>,
+  skill: Record<SkillName, Item[]| Map<string,Item[]>>,
   experience: Record<ExperienceName, Project[] | Work[]>
   tool: Item[],
   certificate: Certificate[],

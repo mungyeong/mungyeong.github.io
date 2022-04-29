@@ -17,10 +17,14 @@
     }
 
     .body {
+        background-color: darkgray;
         font-size: $typographic-base-font-size;
         @include line-height(1);
         @include margin(0, 0, 1);
 
+        div {
+            flex: 1;
+        }
     }
 
     img {
@@ -32,7 +36,7 @@
     }
 
     h3 {
-        background-color: darkgray;
+        text-align: center;
         @include line-height(1);
         @include margin-top(1.5);
         @include margin-bottom(0.5);
