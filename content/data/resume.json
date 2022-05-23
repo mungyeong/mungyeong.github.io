@@ -15,27 +15,39 @@
     "project": [
       {
         "name": "Zeroset 자산관리 개발",
-        "role": "백엔드 개발",
+        "role": "백엔드 개발자",
         "time": "2022.04 ~ ",
-        "desc": ""
+        "desc": "",
+        "stack": [
+
+        ]
       },
       {
         "name": "ZeroMon 다운로드 서비스 개선",
         "role": "백엔드 개발자",
         "time": "2022.03 - 2022.04",
-        "desc": "nest.js, typescript 리팩토링"
+        "desc": "nest.js, typescript 리팩토링",
+        "stack": [
+
+        ]
       },
       {
         "name": "ZeroBack S.M.A.R.T 분석 서비스 개발",
         "role": "백엔드 개발자",
         "time": "2021.12 - 2022.03",
-        "desc": "HDD, SSD S.M.A.R.T 정보 수집 및 분석 하여 현재 저장 장치의 상태를 확인하는 서비스"
+        "desc": "HDD, SSD S.M.A.R.T 정보 수집 및 분석 하여 현재 저장 장치의 상태를 확인하는 서비스",
+        "stack": [
+
+        ]
       },
       {
         "name": "ZeroMon linux 패키지 취약점 서비스 개발",
         "role": "백엔드 개발자",
-        "time": "2021.01 - 2020.12",
-        "desc": "CVE 정보 수집 및 Ubuntu security CVE 정보 수집, Debian security CVE 정보 수집, 패키지 취약점 분석"
+        "time": "2021.08 - 2020.10",
+        "desc": "CVE 정보 수집 및 Ubuntu security CVE 정보 수집, Debian security CVE 정보 수집, 패키지 취약점 분석",
+        "stack": [
+
+        ]
       },
       {
         "name": "경기도일자리재단 청년노동자통장 시스템 운영 용역",
@@ -75,109 +87,58 @@
       },
       {
         "name": "typescript",
-        "level": "2"
+        "level": "1"
+      },
+      {
+        "name": "kotlin",
+        "level": "learning"
       }
     ],
     "backend": [
-      {
-        "name": "spring"
-      },
-      {
-        "name": "springboot"
-      },
-      {
-        "name": "nodejs"
-      },
-      {
-        "name": "express"
-      },
-      {
-        "name": "nestjs"
-      }
+      "spring",
+      "springboot",
+      "nodejs",
+      "express",
+      "nestjs"
     ],
     "frontend": [
-      {
-        "name": "react"
-      },
-      {
-        "name": "gatsby"
-      },
-      {
-        "name": "vuejs"
-      },
-      {
-        "name": "vuetify"
-      }
+      "react",
+      "gatsby",
+      "vuejs",
+      "vuetify"
     ],
     "etc": {
       "vcs": [
-        {
-          "name": "git"
-        },
-        {
-          "name": "gitLab"
-        },
-        {
-          "name": "gitHub"
-        }
+        "git",
+        "gitLab",
+        "gitHub"
       ],
       "build": [
-        {
-          "name": "maven"
-        },
-        {
-          "name": "gradle"
-        },
-        {
-          "name": "npm"
-        },
-        {
-          "name": "yarn"
-        },
-        {
-          "name": "jenkins"
-        }
+        "maven",
+        "gradle",
+        "npm",
+        "yarn",
+        "jenkins"
       ],
       "server": [
-        {
-          "name": "aws"
-        },
-        {
-          "name": "docker"
-        },
-        {
-          "name": "kubernetes"
-        }
+
+        "aws",
+        "docker",
+        "kubernetes"
       ],
       "db": [
-        {
-          "name": "mysql"
-        },
-        {
-          "name": "mariadb"
-        },
-        {
-          "name": "mongodb"
-        },
-        {
-          "name": "redis"
-        },
-        {
-          "name": "rabbitmq"
-        }
+        "mysql",
+        "mariadb",
+        "mongodb",
+        "redis",
+        "rabbitmq"
       ]
     }
   },
   "tool": [
-    {
-      "name": "intellijidea"
-    },
-    {
-      "name": "webstorm"
-    },
-    {
-      "name": "datagrip"
-    }
+    "intellijidea",
+    "webstorm",
+    "datagrip"
   ],
   "certificate": [
     {

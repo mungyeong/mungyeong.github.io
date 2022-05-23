@@ -5,9 +5,7 @@ const useResume= () => {
     graphql`
       query DataJson {
         dataJson {
-          tool {
-            name
-          }
+          tool
           experience {
             project {
               name
@@ -26,26 +24,14 @@ const useResume= () => {
               name
               level
             }
-            frontend {
-              name
-            }
+            frontend
             etc {
-              build {
-                name
-              }
-              db {
-                name
-              }
-              server {
-                name
-              }
-              vcs {
-                name
-              }
+              build
+              db
+              server
+              vcs
             }
-            backend {
-              name
-            }
+            backend
           }
           certificate {
             name

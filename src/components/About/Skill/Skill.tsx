@@ -10,9 +10,9 @@ interface Props {
 
 interface Data {
   language: Item[];
-  backend: Item[];
-  frontend: Item[];
-  etc: Map<string, Item[]>;
+  backend: String[];
+  frontend: String[];
+  etc: Map<string, String[]>;
 }
 
 const Skill = ({skill}: Props ) => {
@@ -29,12 +29,12 @@ const Skill = ({skill}: Props ) => {
       </div>
       <div>
         {backend && backend.map((item) =>
-                SVG[item.name]())
+                SVG[item]())
         }
       </div>
       <div>
         {frontend && frontend.map((item) =>
-                SVG[item.name]())
+                SVG[item]())
         }
       </div>
     </div>
