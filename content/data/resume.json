@@ -1,0 +1,161 @@
+{
+  "experience": {
+    "work": [
+      {
+        "company": "(주)제론소프트엔 (Zeronsoftn)",
+        "department": "시스템 솔루션 개발부",
+        "time": "202108 ~ "
+      },
+      {
+        "company": "(주)아사달 (Asadal)",
+        "department": "웹사업부 호스팅팀",
+        "time": "2018-12 ~ 2021-02"
+      }
+    ],
+    "project": [
+      {
+        "name": "Zeroset 자산관리 개발",
+        "role": "백엔드 개발자",
+        "time": "2022.04 ~ ",
+        "desc": "",
+        "stack": [
+
+        ]
+      },
+      {
+        "name": "ZeroMon 다운로드 서비스 개선",
+        "role": "백엔드 개발자",
+        "time": "2022.03 - 2022.04",
+        "desc": "nest.js, typescript 리팩토링",
+        "stack": [
+
+        ]
+      },
+      {
+        "name": "ZeroBack S.M.A.R.T 분석 서비스 개발",
+        "role": "백엔드 개발자",
+        "time": "2021.12 - 2022.03",
+        "desc": "HDD, SSD S.M.A.R.T 정보 수집 및 분석 하여 현재 저장 장치의 상태를 확인하는 서비스",
+        "stack": [
+
+        ]
+      },
+      {
+        "name": "ZeroMon linux 패키지 취약점 서비스 개발",
+        "role": "백엔드 개발자",
+        "time": "2021.08 - 2020.10",
+        "desc": "CVE 정보 수집 및 Ubuntu security CVE 정보 수집, Debian security CVE 정보 수집, 패키지 취약점 분석",
+        "stack": [
+
+        ]
+      },
+      {
+        "name": "경기도일자리재단 청년노동자통장 시스템 운영 용역",
+        "time": "2020.01 - 2020.12"
+      },
+      {
+        "name": "RFID기반 서울역사유물관리시스템 유지관리 용역",
+        "time": "2020.01 - 2020.12"
+      },
+      {
+        "name": "2020년 대·중소기업·농어업협력재단 정보시스템 유지보수 용역",
+        "time": "2020.01 - 2020.12"
+      },
+      {
+        "name": "서울시자원봉사센터 홈페이지 유지관리 및 기능개선",
+        "time": "2020.01 - 2020.12"
+      },
+      {
+        "name": "중소벤처기업진흥공단 자산거래중개장터 홈페이지 유지보수",
+        "time": "2019.01 - 2019.12"
+      },
+      {
+        "name": "대·중소기업·농어업협력재단 정보시스템 유지보수",
+        "time": "2018.12- 2019.12"
+      }
+    ]
+  },
+  "skill": {
+    "language": [
+      {
+        "name": "java",
+        "level": "3"
+      },
+      {
+        "name": "javascript",
+        "level": "2"
+      },
+      {
+        "name": "typescript",
+        "level": "1"
+      },
+      {
+        "name": "kotlin",
+        "level": "learning"
+      }
+    ],
+    "backend": [
+      "spring",
+      "springboot",
+      "nodejs",
+      "express",
+      "nestjs"
+    ],
+    "frontend": [
+      "react",
+      "gatsby",
+      "vuejs",
+      "vuetify"
+    ],
+    "etc": {
+      "vcs": [
+        "git",
+        "gitLab",
+        "gitHub"
+      ],
+      "build": [
+        "maven",
+        "gradle",
+        "npm",
+        "yarn",
+        "jenkins"
+      ],
+      "server": [
+
+        "aws",
+        "docker",
+        "kubernetes"
+      ],
+      "db": [
+        "mysql",
+        "mariadb",
+        "mongodb",
+        "redis",
+        "rabbitmq"
+      ]
+    }
+  },
+  "tool": [
+    "intellijidea",
+    "webstorm",
+    "datagrip"
+  ],
+  "certificate": [
+    {
+      "name": "정보처리산업기사",
+      "date": "2019.05.22"
+    },
+    {
+      "name": "네트워크관리사2급",
+      "date": "2018.07.03"
+    },
+    {
+      "name": "리눅스마스터2급",
+      "date": "2018.06.22"
+    },
+    {
+      "name": "정보처리기능사",
+      "date": "2016.02.03"
+    }
+  ]
+}
